@@ -22,6 +22,11 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
+from taurus.qt.qtgui.display import TaurusLed
+
+from ui_ctl_widget import Ui_Form as ctl_ui
+from ui_dia_widget import Ui_Form as dia_ui
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
@@ -462,7 +467,8 @@ class Ui_MainWindow(object):
         self.actionWebPanicGui.setText(_translate("MainWindow", "WebPanicGui", None))
         self.actionClose.setText(_translate("MainWindow", "Close", None))
 
-from taurus.qt.qtgui.display import TaurusLed
+        self.taurusLed_I_CTL_PYALARM01.setModel('sys/tg_test/1')
+
 
 if __name__ == "__main__":
     import sys
