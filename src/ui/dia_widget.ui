@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>352</width>
+    <height>164</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="5">
+      <widget class="TaurusLed" name="taurusLed_9"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Linac</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>DIA</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="TaurusLed" name="taurusLed_2"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Ring</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="TaurusLed" name="taurusLed_11"/>
+     </item>
+     <item row="2" column="6">
+      <widget class="TaurusLed" name="taurusLed_10"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="TaurusLed" name="taurusLed_4"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="TaurusLed" name="taurusLed_3"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="TaurusLed" name="taurusLed_5"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="TaurusLed" name="taurusLed"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="TaurusLed" name="taurusLed_6"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="TaurusLed" name="taurusLed_7"/>
+     </item>
+     <item row="2" column="4">
+      <widget class="TaurusLed" name="taurusLed_8"/>
+     </item>
+     <item row="2" column="8">
+      <widget class="TaurusLed" name="taurusLed_12"/>
+     </item>
+     <item row="1" column="5">
+      <widget class="TaurusLed" name="taurusLed_13"/>
+     </item>
+     <item row="1" column="6">
+      <widget class="TaurusLed" name="taurusLed_14"/>
+     </item>
+     <item row="1" column="7">
+      <widget class="TaurusLed" name="taurusLed_15"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TaurusLed</class>
+   <extends>QLed</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+  <customwidget>
+   <class>QLed</class>
+   <extends>QPixmapWidget</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+  <customwidget>
+   <class>QPixmapWidget</class>
+   <extends>QWidget</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
